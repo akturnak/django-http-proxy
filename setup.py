@@ -10,9 +10,8 @@ versioneer.tag_prefix = ''
 versioneer.parentdir_prefix = ''
 
 setup(
-    name='django-http-proxy',
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    name='django-http-proxy-3',
+    version='0.4.4',
     description='A simple HTTP proxy for the Django framework.',
     author='Yuri van der Meer',
     author_email='contact@yvandermeer.net',
@@ -20,6 +19,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'Django>=1.6',
+        'six',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
